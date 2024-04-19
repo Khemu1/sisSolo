@@ -1,0 +1,22 @@
+4 / 5 / 2024
+
+added Utils file & StudentRegister
+added TeacherRegister
+
+4 / 9 / 2024 
+
+completed the API callings
+
+4 / 12 / 2024
+
+added the home page file
+
+4 / 13 / 2024
+
+completed navigation part home
+
+project is completed
+
+4 / 14 / 2024
+
+made a from errors display method in utils
