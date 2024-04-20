@@ -10,19 +10,27 @@ form {
   justify-items: center;
 }
 body {
-  background-color: #ecebeb;
+  /* background-color: #ecebeb; */
+  height: 100dvh;
+  background-image: url("../../assets/images/wallpaperflare.com_wallpaper.jpg");
+  transition: 1000ms ease-in-out;
+  overflow: hidden;
 }
 
 .home {
   position: relative;
   width: 350px;
-  margin: 50px auto;
+  margin-top: 200px;
+  margin-left: 1200px;
   text-align: center;
-  border: 1px solid #ffffff;
+  border: none;
   border-radius: 8px;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: transparent;
   box-shadow: 5px -6px 12px -1px rgba(0, 0, 0, 0.32);
+  height: max-content;
+  backdrop-filter: blur(5px);
+  transition: 1000ms ease-in-out;
 }
 
 .home .head {
@@ -153,17 +161,22 @@ a.dark-font:hover::before {
   width: 100%;
 }
 .body-dark {
-  background-color: #131d26;
+  background-image: url("../../assets/images/wallpaperflare.com_wallpaper\ dark.jpg");
   color: white !important;
+  transition: 1000ms ease-in-out;
 }
 .container-dark {
-  background-color: #111a26;
+  background-color: transparent;
   color: white !important;
-  border: none;
-  box-shadow: 5px -6px 12px -1px #111a26;
+  box-shadow: 5px -6px 12px -1px #272626;
+  height: max-content;
+  margin-top: 200px;
+  margin-left: 200px;
+  backdrop-filter: blur(5px);
+  transition: 1000ms ease-in-out;
 }
 .font-dark {
-  color: white !important;
+  color: white;
 }
 
 .switch {

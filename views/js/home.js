@@ -103,8 +103,6 @@ let about = `<div class="about">
 
 let courses1;
 
-if (window.location.href == "http://sis.test/views/php/home.php") {
-}
 
 // Fetching data from the backend
 async function fetchData() {
@@ -143,7 +141,7 @@ async function fetchDataAndUpdateVariable() {
     let section = document.querySelector("section");
     let url = window.location.href;
 
-    if (url === "http://sis.test/views/php/home.php") {
+    if (url === "http://sissolo.test/views/php/home.php") {
       console.log("will display home");
       let tempDiv = document.createElement("div");
       tempDiv.innerHTML = home1;
@@ -151,7 +149,7 @@ async function fetchDataAndUpdateVariable() {
       section.appendChild(homeNode);
     }
 
-    if (url === "http://sis.test/views/php/home.php?page=courses") {
+    if (url === "http://sissolo.test/views/php/home.php?page=courses") {
       console.log("will display courses");
       let tempDiv = document.createElement("div");
       tempDiv.innerHTML = courses1;
@@ -159,7 +157,7 @@ async function fetchDataAndUpdateVariable() {
       section.appendChild(coursesNode);
     }
 
-    if (url === "http://sis.test/views/php/home.php?page=about") {
+    if (url === "http://sissolo.test/views/php/home.php?page=about") {
       console.log("will display about");
       let tempDiv = document.createElement("div");
       tempDiv.innerHTML = about;

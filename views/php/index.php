@@ -40,7 +40,6 @@
     <div class="footer">
       <p class="font-dark">Powered by Kemet SIS</p>
     </div>
-    <a href="about.php" class="font-dark">About us</a>
   </div>
 </body>
 

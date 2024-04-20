@@ -147,15 +147,22 @@ export function formthemes(type) {
   if (type === "login") {
     let home = document.querySelector(".home");
     let anchors = document.querySelectorAll("a");
+    let ps = document.querySelectorAll("p");
     if (document.body.classList.contains("body-dark")) {
       document.body.classList.remove("body-dark");
       home.classList.remove("container-dark");
       anchors.forEach((a) => {
         a.classList.remove("font-dark");
+        ps.forEach((p) => {
+          p.classList.remove("font-dark");
+        });
       });
       document.querySelector("p").classList.remove("font-dark");
       document.querySelector(".main").classList.toggle("hide");
       document.querySelector("input.theme-switcher").checked = true;
+      ps.forEach((p) => {
+        p.classList.add("font-dark");
+      });
       localStorage.setItem("theme", "white");
       return;
     }
@@ -165,7 +172,6 @@ export function formthemes(type) {
     anchors.forEach((a) => {
       a.classList.add("font-dark");
     });
-    document.querySelector("p").classList.add("font-dark");
     document.querySelector("input.theme-switcher").checked = false;
     document.querySelector(".main").classList.toggle("hide");
     localStorage.setItem("theme", "dark");
@@ -174,11 +180,16 @@ export function formthemes(type) {
   if (type === "student") {
     let home = document.querySelector(".container");
     let anchors = document.querySelectorAll("a");
+    let ps = document.querySelectorAll("p");
+
     if (document.body.classList.contains("body-dark")) {
       document.body.classList.remove("body-dark");
       home.classList.remove("container-dark");
       anchors.forEach((a) => {
         a.classList.remove("font-dark");
+      });
+      ps.forEach((p) => {
+        p.classList.remove("font-dark");
       });
       document.querySelector("p").classList.remove("font-dark");
       document.querySelector("input.theme-switcher").checked = true;
@@ -191,7 +202,9 @@ export function formthemes(type) {
     anchors.forEach((a) => {
       a.classList.add("font-dark");
     });
-    document.querySelector("p").classList.add("font-dark");
+    ps.forEach((p) => {
+      p.classList.add("font-dark");
+    });
     document.querySelector("input.theme-switcher").checked = false;
     document.querySelector(".main").classList.toggle("hide");
     localStorage.setItem("theme", "dark");
@@ -201,6 +214,8 @@ export function formthemes(type) {
     let home = document.querySelector(".container");
     let anchors = document.querySelectorAll("a");
     let labels = document.querySelectorAll("label");
+    let ps = document.querySelectorAll("p");
+
     if (document.body.classList.contains("body-dark")) {
       document.body.classList.remove("body-dark");
       home.classList.remove("container-dark");
@@ -209,6 +224,9 @@ export function formthemes(type) {
       });
       labels.forEach((l) => {
         l.classList.remove("font-dark");
+      });
+      ps.forEach((p) => {
+        p.classList.remove("font-dark");
       });
       document.querySelector("p").classList.remove("font-dark");
       document.querySelector("input.theme-switcher").checked = true;
@@ -224,7 +242,9 @@ export function formthemes(type) {
     labels.forEach((l) => {
       l.classList.add("font-dark");
     });
-    document.querySelector("p").classList.add("font-dark");
+    ps.forEach((p) => {
+      p.classList.add("font-dark");
+    });
     document.querySelector("input.theme-switcher").checked = false;
     document.querySelector(".main").classList.toggle("hide");
     localStorage.setItem("theme", "dark");
