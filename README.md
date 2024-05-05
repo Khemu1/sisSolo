@@ -15,8 +15,6 @@ The Student Information System (SIS) is designed to manage students and teachers
 
 **Course Management:** Teachers can see enrolled students
 
-**Responsive Design:** The system is designed to be responsive, adapting to various screen sizes and devices for a seamless user experience.
-
 # **Technologies Used**
 **Frontend:** HTML, CSS, JavaScript
 
@@ -31,4 +29,4 @@ or check the website from here : http://kemet.infinityfreeapp.com/views/php/
 
 # Note
 
-the main differnce between this project and the other that this one uses **APIs** in every file
+The main differnce between this project and the other that this one uses **APIs** in every file
