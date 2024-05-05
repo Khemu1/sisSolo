@@ -31,4 +31,4 @@ or check the website from here : http://kemet.infinityfreeapp.com/views/php/
 
 # Note
 
-the main differnce between this project and the other that this one uses API in every file
+the main differnce between this project and the other that this one uses **APIs** in every file
