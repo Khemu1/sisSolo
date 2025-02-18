@@ -26,6 +26,7 @@ nav {
   align-items: center;
   width: 100%;
   background: #ffffff;
+  z-index: 1000;
 
   height: 100px !important;
 }
@@ -321,9 +322,7 @@ section {
   border: none;
   border-radius: 15px;
 }
-.about div img:hover {
-  transform: scale(1.05);
-}
+
 .img-container {
   width: 1000px;
   height: 500px;

@@ -134,7 +134,7 @@ form.addEventListener("submit", async (e) => {
     console.log(responseData);
     if (stat == "success") {
       console.log("yeeeeeeeeeeeeeees");
-      window.location.href = `http://sissolo.test/views/php/home.php?${
+      window.location.href = `http://localhost/views/php/home.php?${
         utils.hasDark() ? "dark" : "white"
       }`;
     } else {

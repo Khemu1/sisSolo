@@ -84,7 +84,7 @@ form.addEventListener("submit", async (e) => {
     let responseData = await result.json();
     let stat = responseData.status;
     if (stat == "success") {
-      window.location.href = `http://sissolo.test/views/php/home.php`;
+      window.location.href = `http://localhost/sisSolo/views/php/home.php`;
     } else {
       utils.handelErrorDisplay(responseData.errors);
     }
